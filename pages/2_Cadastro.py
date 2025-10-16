@@ -24,7 +24,6 @@ if senha == senha_correta:
     else:
         itens = pd.DataFrame(columns=["Nome", "Unidade", "Quantidade", "Categoria", "Preço"])
 
-    aba = st.tabs(["👥 Participantes", "🛒 Itens"])[0]
 
     # --- Cadastro de Participantes ---
     with st.expander("👥 Cadastrar Participantes", expanded=True):
