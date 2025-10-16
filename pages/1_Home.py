@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="Os Sparnauê", page_icon="🍻", layout="centered")
 
 st.title("🌴🔥 OS SPARNAUÊ 🔥🌴")
-st.image("assets/logo.png")
+st.image("assets/logo.png",width='stretch')
 
 st.markdown(
     """
