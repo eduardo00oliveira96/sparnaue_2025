@@ -54,3 +54,20 @@ if not participantes.empty or not itens.empty:
 
 else:
     st.warning("Nenhum dado encontrado. Cadastre participantes e itens primeiro.")
+
+
+st.subheader("Notas fiscais")
+media_files = [
+    {"type": "image", "file": "assets/nota-1.jpeg"},
+    {"type": "image", "file": "assets/nota-2.jpeg"},
+]
+
+# Slider para escolher mídia
+idx = st.slider("Navegue pelas notas:", 0, len(media_files)-1, 0)
+
+current_media = media_files[idx]
+
+if current_media["type"] == "image":
+    st.image(current_media["file"], caption=f"Momento {idx+1}", use_container_width=True)
+elif current_media["type"] == "video":
+    st.video(current_media["file"])
